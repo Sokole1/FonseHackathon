@@ -17,7 +17,8 @@ for number in brackets:
 
 website_link = "http://www.speedrun.com/sm64"
 
-driver = webdriver.Chrome()
+CHROME_DRIVER_PATH = "driver/chromedriver.exe"
+driver = webdriver.Chrome(CHROME_DRIVER_PATH)
 driver.get(website_link + division)
 
 
